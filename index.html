@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6 - jQuery Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Task 0: Include jQuery from a CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <section id="profile-section" class="box">
+            <h1>Welcome to My Portfolio</h1>
+            <h2 id="student-name">Isaali Abdunabi</h2>
+            <h3 class="headline">2nd Year Student at AITU</h3>
+            <p class="intro-text">Hello! I study Computer Science and Backend Development. Here is my Assignment 6 project.</p>
+            
+            <button id="update-headline-btn">Update Headline & Style</button>
+            <button id="light-theme-btn">Light Theme</button>
+            <button id="dark-theme-btn">Dark Theme</button>
+        </section>
+
+        <section id="about-section" class="box">
+            <h2>About Me</h2>
+            <p>I am originally from Shymkent and currently studying in Astana. I enjoy programming in C# and Java.</p>
+            <p id="status-message"><strong>Status:</strong> Currently learning jQuery!</p>
+            
+            <div id="fun-facts">
+                <p><strong>Fun Facts & Interests:</strong></p>
+                <ul>
+                    <li>I like playing volleyball and chess.</li>
+                    <li>I enjoy watching anime in my free time.</li>
+                    <li>My goal is to become a Full-Stack or Backend Engineer.</li>
+                </ul>
+            </div>
+
+            <button id="hide-btn">Hide</button>
+            <button id="show-btn">Show</button>
+            <button id="toggle-btn">Toggle</button>
+        </section>
+
+        <section id="gallery-section" class="box">
+            <h2>My Gallery</h2>
+            <div class="gallery">
+                <img src="https://picsum.photos/id/1/250/160" alt="Coding Project" class="gallery-img">
+                <img src="https://picsum.photos/id/180/250/160" alt="Study Workspace" class="gallery-img">
+            </div>
+            <br>
+            <button id="fade-in-btn">Fade In</button>
+            <button id="fade-out-btn">Fade Out</button>
+            <button id="fade-toggle-btn">Fade Toggle</button>
+        </section>
+
+        <section id="accordion-section" class="box">
+            <h2>More Info (Click Headings)</h2>
+
+            <div class="slide-controls">
+                <button id="slide-up-all">Slide Up All</button>
+                <button id="slide-down-all">Slide Down All</button>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Music</h3>
+            <div class="slide-panel">
+                <p>I listen to lo-fi beats while coding, as well as rock and Kazakh indie music.</p>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Anime / Movie</h3>
+            <div class="slide-panel">
+                <p>My favorite anime series are Hunter x Hunter and Grand Blue.</p>
+            </div>
+
+            <h3 class="slide-heading">My Favorite Subject</h3>
+            <div class="slide-panel">
+                <p>Algorithms and Data Structures, Object-Oriented Programming, and Web Technologies.</p>
+            </div>
+        </section>
+
+        <section id="skills-section" class="box">
+            <h2>My Technical Skills</h2>
+            <ul id="skills-list">
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript</li>
+                <li>Java (OOP & JDBC)</li>
+                <li>C# & .NET</li>
+            </ul>
+
+            <input type="text" id="skill-input" placeholder="Enter a new skill">
+            <button id="add-skill-btn">Add Skill</button>
+            <button id="prepend-skill-btn">Prepend Skill</button>
+            <button id="remove-skill-btn">Remove Skill</button>
+        </section>
+
+        <section id="links-section" class="box">
+            <h2>Social Media Link</h2>
+            <p>Current link: <a id="social-link" href="https://github.com/AvgustIS" target="_blank">My GitHub Profile</a></p>
+            <button id="change-link-btn">Change Link to Moodle AITU</button>
+        </section>
+
+        <section id="form-section" class="box">
+            <h2>Contact Form (Live Preview)</h2>
+            <form id="contact-form">
+                <label>Name:</label><br>
+                <input type="text" id="name-input" placeholder="Type your name"><br><br>
+                
+                <label>Email:</label><br>
+                <input type="email" id="email-input" placeholder="Type your email">
+            </form>
+
+            <div class="live-output">
+                <p><strong>Live Name:</strong> <span id="live-name">-</span></p>
+                <p><strong>Live Email:</strong> <span id="live-email">-</span></p>
+            </div>
+        </section>
+
+        
+        <section id="animation-section" class="box">
+            <h2>Skill Bars Animation</h2>
+            
+            <div class="skill-item">
+                <span>HTML / CSS (85%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-html" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>JavaScript / jQuery (70%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-js" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <span>C# / Java (80%)</span>
+                <div class="skill-bar-bg">
+                    <div id="bar-backend" class="skill-bar-fill"></div>
+                </div>
+            </div>
+
+            <button id="animate-skills-btn">Animate My Skills</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

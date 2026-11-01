@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.box {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 7px 12px;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 6px;
+    width: 240px;
+}
+
+.gallery-img {
+    width: 250px;
+    height: 160px;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 1px solid #999;
+}
+
+.slide-heading {
+    background-color: #e2e2e2;
+    padding: 10px;
+    margin: 8px 0 0 0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}
+
+.slide-panel {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #fafafa;
+}
+
+.skill-item {
+    margin-bottom: 12px;
+}
+
+.skill-bar-bg {
+    width: 100%;
+    background-color: #ddd;
+    height: 22px;
+    border-radius: 3px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.skill-bar-fill {
+    width: 0px; 
+    height: 100%;
+    background-color: #3b82f6;
+}
